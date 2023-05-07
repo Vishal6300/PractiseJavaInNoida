@@ -2,8 +2,11 @@ Question:
 What are the Access Modifiers in Java? Differenciate between each.
 
 There are 4 types of Access Modifiers in Java.
-1.Public
-2.Protected
-3.Default
-4.Private
+1.Public : It is accessible outside the package.
+2.Protected: It is accessible only inside the package.
+3.Default :  It is accessible only inside the package.
+4.Private : It is accessible only inside the class .
 
+The difference between them are:
+1st difference: If we use public modifier in class Name it means we can Access it outside the package. 
+            If we use the modifier other than public then it will not accessible outside the package.
