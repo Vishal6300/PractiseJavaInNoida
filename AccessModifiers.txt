@@ -1,0 +1,9 @@
+Question:
+What are the Access Modifiers in Java? Differenciate between each.
+
+There are 4 types of Access Modifiers in Java.
+1.Public
+2.Protected
+3.Default
+4.Private
+
