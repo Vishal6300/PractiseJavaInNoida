@@ -1,0 +1,7 @@
+What is Keywords?
+Answer:
+Some words are reserved for Java that has some functions in it. It is called as Keywords.
+Example: int, float, double, boolean etc.
+
+
+
