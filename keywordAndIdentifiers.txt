@@ -4,4 +4,10 @@ Some words are reserved for Java that has some functions in it. It is called as 
 Example: int, float, double, boolean etc.
 
 
+What is Identifiers?
+Answer:
+Identifiers are words that is used to identify the class name, method name, variable name etc.
 
+Example: class Main{} : Here Main is an Identifier as class name.
+          public static void addStudent(){} : Here addStudent is an Identifier as method name.
+          int marks=560; Here marks is an Identifier as variable name.
