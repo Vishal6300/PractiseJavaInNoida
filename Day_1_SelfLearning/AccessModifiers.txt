@@ -1,4 +1,4 @@
-Question:
+Question 1:
 What are the Access Modifiers in Java? Differenciate between each.
 
 There are 4 types of Access Modifiers in Java.
@@ -7,3 +7,13 @@ There are 4 types of Access Modifiers in Java.
 3.Default :  It is accessible only inside the package.
 4.Private : It is accessible only inside the class .
 
+
+Example : public class Main{}
+            public static void fact(){}
+            Protected class Protect(){}
+            Default class Default(){}
+            private class Private(){}
+
+
+Question 2:
+    

@@ -40,12 +40,6 @@ public class Employee {
 			return "Employee [empId=" + empId + ", eName=" + eName + ", salary=" + salary + "]";
 		}
 		
-		
-		
-		public static void main(String[] args) {
-			Employee emp1= new Employee();
-//			emp1.getEmpId();
-			System.out.println(emp1.empId);
-		}
+
 		
 }
