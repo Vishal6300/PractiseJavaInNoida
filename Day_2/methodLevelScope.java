@@ -7,5 +7,10 @@ public class methodLevelScope {
     }
 
     // it will not accessible outside this method.
+    public int check() {
+        // it will give compile time error because count variable is not accessible in
+        // different method beacuse it has method level scope.
+        return count;
+    }
 
 }
