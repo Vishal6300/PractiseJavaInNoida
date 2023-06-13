@@ -18,4 +18,4 @@ As per Oracle, there are 3 types of Exception.
 
 
 (i) Checked Exception: Checked Exception is the exception which can be checked during the compile time.
-(ii) Unchecked Exception : 
+(ii) Unchecked Exception : Unchecked Exception is the exception which occurs at run time.
