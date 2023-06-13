@@ -3,12 +3,12 @@ What is Exception Handling in java?
 Exception Handling is a mechanism in java to handle of runtime errors so that the normal flow of the program
 can be maintained.
 
-Question 1:
+Question 2:
 What is exception in Java?
 Exception is an event that disrupts the normal flow of the program excution.
 It is an object that throws at runtime.
 
-Question 2:
+Question 3:
 
 How many types of Exception:
 As per Oracle, there are 3 types of Exception.
