@@ -12,6 +12,9 @@ Question 3:
 
 How many types of Exception:
 As per Oracle, there are 3 types of Exception.
-(i)  Checked Exception
-(ii) Unchecked Exception
-(iii)Errors
+ (i)  Checked Exception
+ (ii) Unchecked Exception
+(iii) Errors
+
+
+(i) Checked Exception: Checked Exception is the exception which can be checked during the compile time.
