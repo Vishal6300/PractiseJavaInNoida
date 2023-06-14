@@ -1,2 +1,3 @@
 IOC container is used to initiate, manage and Assemble the bean classes. There are two types of IOC container
 BeanFactory
+ApplicationContext
