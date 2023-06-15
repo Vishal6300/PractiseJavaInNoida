@@ -1,6 +1,15 @@
 package com.masai.model;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentId;
 	private int rollNo;
 	private String name;
@@ -9,9 +18,6 @@ public class Student {
 	
 	public int getStudentId() {
 		return studentId;
-	}
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
 	}
 	public int getRollNo() {
 		return rollNo;
