@@ -46,7 +46,7 @@ public class EmpServiceImpl implements EmpService{
 			Employee updateEmployee=empRepo.save(emp1);
 			return updateEmployee;
 		}else
-		return "EMployee id not avaliable";
+		return "Employee id not avaliable";
 	}
 
 }
