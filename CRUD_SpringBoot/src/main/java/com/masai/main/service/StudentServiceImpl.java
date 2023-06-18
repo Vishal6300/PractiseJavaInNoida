@@ -50,9 +50,23 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public Student updateStudentData(Integer studentId) {
-		// TODO Auto-generated method stub
-		return studentRepo.getById(studentId) ;
+	public Object updateStudentData(Integer studentId, Student student) {
+		
+		Optional<Student> stud= studentRepo.findById(studentId);
+		
+		if(stud.isPresent()) {
+			Student student1= stud.get();
+			student1.setRollNo(student.getRollNo());
+			student1.setName(student.getName());
+			student1.setCity(student.getCity());
+			student1.setMarks(student.getMarks());
+			
+			Student stt=studentRepo.save(student1);
+			return stt;
+			
+		}else {
+			return "StudentId didn't match";
+		}
 		
 	}
 

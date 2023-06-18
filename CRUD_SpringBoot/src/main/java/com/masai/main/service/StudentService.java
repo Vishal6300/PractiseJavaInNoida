@@ -13,6 +13,6 @@ public interface StudentService {
 		public Optional<Student> searchStudentByRollNo(Integer rollNo);
 		public Optional<Student> searchStudentById(Integer id);
 		public List<Student> viewStudentList();
-		public Student updateStudentData(Integer studentId);
+		public Object updateStudentData(Integer studentId, Student student);
 		public void deleteStudent(Integer rollNo);
 }

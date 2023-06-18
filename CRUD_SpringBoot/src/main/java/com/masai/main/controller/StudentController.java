@@ -1,4 +1,4 @@
-package com.masai.main.controller;
+ package com.masai.main.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,5 +49,11 @@ public class StudentController {
 	@DeleteMapping("/studentDeleteByRoll/{rollNo}")
 	public void deleteStudent(@PathVariable Integer rollNo) {
 		 studentService.deleteStudent(rollNo);
+	}
+	
+	@PutMapping("/updateStudentDetails/{id}")
+	public Object updateStudentDetails(@PathVariable Integer id,@RequestBody Student student) {
+		return studentService.updateStudentData(id, student);
+		
 	}
 }

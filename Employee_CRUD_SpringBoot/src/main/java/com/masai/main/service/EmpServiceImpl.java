@@ -32,4 +32,21 @@ public class EmpServiceImpl implements EmpService{
 		return empRepo.findById(empId);
 	}
 
+	@Override
+	public Object updateEmployeeData(Integer id, Employee employee) {
+		// TODO Auto-generated method stub
+		Optional<Employee> emp=empRepo.findById(id);
+		
+		if(emp.isPresent()) {
+			Employee emp1= emp.get();
+			emp1.setEmpName(employee.getEmpName());
+			emp1.setSalary(employee.getSalary());
+			emp1.setAddress(employee.getAddress());
+			
+			Employee updateEmployee=empRepo.save(emp1);
+			return updateEmployee;
+		}else
+		return "EMployee id not avaliable";
+	}
+
 }

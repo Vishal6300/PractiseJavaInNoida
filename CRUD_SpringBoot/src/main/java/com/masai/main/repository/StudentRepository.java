@@ -16,5 +16,6 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	//@Query("delete from Student s where s.rollNo='rollNo'")
 	void deleteByRollNo(Integer rollNo);
 
+
 	
 }

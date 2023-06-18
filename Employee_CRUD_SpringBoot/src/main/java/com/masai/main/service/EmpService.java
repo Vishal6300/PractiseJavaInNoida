@@ -12,4 +12,5 @@ public interface EmpService {
 	public Employee addEmployee(Employee emp);
 	public List<Employee> viewEmployee();
 	public Optional<Employee> empGetById(Integer empId);
+	public Object updateEmployeeData(Integer id, Employee employee);
 }
