@@ -1,3 +1,4 @@
 # PractiseJavaInNoida
 
-Practised Core Java.
+Practiced Core Java.
+Practiced making of some web applications.
