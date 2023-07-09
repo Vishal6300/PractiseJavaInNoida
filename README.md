@@ -1,1 +1,3 @@
 # PractiseJavaInNoida
+
+Practised Core Java.
