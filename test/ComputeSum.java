@@ -16,6 +16,5 @@ public class ComputeSum {
 
         int res = computeEvenSum(n);
         System.out.println(res);
-
     }
 }
