@@ -1,1 +1,2 @@
 What is servlets?
+servlet is a technology which to used to create dynamic web page.
