@@ -2,3 +2,5 @@ What is servlets?
 :- servlet is a technology which to used to create dynamic web page.
 :- servlet is a interface that must be implement to create a any servlet.
 :- servlet is an API that provides many interfaces and classes for documentation.
+
+Servlet is Robust, scalable and secure because of Java language.
