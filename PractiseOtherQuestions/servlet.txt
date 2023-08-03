@@ -4,3 +4,4 @@ What is servlets?
 :- servlet is an API that provides many interfaces and classes for documentation.
 
 Servlet is Robust, scalable and secure because of Java language.
+Before Servlet, CGI (Common Gateway interface) scripting language is used as server side language.
