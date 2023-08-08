@@ -14,6 +14,6 @@ public interface StudentService {
 	public Optional<Student> searchStudentByStudentId(Integer id);
 	public List<Student> listOfAllStudent();
 	public Object updateStudentById(Integer id, Student student);
-	public void deleteStudent(Integer rollNo);
+	public void deleteStudent(Integer id);
 	
 }
