@@ -3,9 +3,14 @@ package com.masai.StudentCRUDSystem.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.masai.StudentCRUDSystem.model.Student;
 
 public class StudentServiceImpl implements StudentService{
+	
+	@Autowired
+	StudentService studentService;
 
 	@Override
 	public Student addStudent(Student student) {
