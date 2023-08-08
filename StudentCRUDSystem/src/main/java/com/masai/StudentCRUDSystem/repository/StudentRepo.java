@@ -1,9 +1,11 @@
 package com.masai.StudentCRUDSystem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import jakarta.persistence.Id;
+import com.masai.StudentCRUDSystem.model.Student;
 
-public interface StudentRepo extends JpaRepository<Integer, Id>{
+@Repository
+public interface StudentRepo extends JpaRepository<Student, Integer>{
 		
 }
