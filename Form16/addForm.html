@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student Record</title>
+  </head>
+  <body>
+    <h1>Add Student Form</h1>
+    <form id="addStudent">
+      <div>
+        <label for="">Name</label><br />
+        <input type="text" id="name" placeholder="Enter Student Name" /><br />
+        <label for="">Roll No.</label><br />
+        <input
+          type="number"
+          id="rollNo"
+          placeholder="Enter student Roll No."
+        /><br />
+        <label for="">College Name</label><br />
+        <input
+          type="text"
+          id="collegeName"
+          placeholder="Enter student College Name"
+        /><br />
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+  <script>
+    const addStudent = document.getElementById("addStudent");
+    console.log("Before function");
+    addStudent.addEventListener("submit", function (event) {
+      console.log("Function Called");
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const rollNo = document.getElementById("rollNo").value;
+      const collegeName = document.getElementById("collegeName").value;
+
+      // Create new student object
+      const newStudent = {
+        name: name,
+        rollNo: rollNo,
+        collegeName: collegeName,
+      };
+
+      // POST request to add a new student
+      fetch("http://localhost:8080/stud/addStudent", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newStudent),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("New student added:", data);
+          fetchStudents(); // Refresh the student list
+        })
+        .catch((error) => console.error("Error adding student:", error));
+
+      // Clear form inputs
+      document.getElementById("name").value = "";
+      document.getElementById("rollNo").value = "";
+      document.getElementById("collegeName").value = "";
+    });
+  </script>
+</html>

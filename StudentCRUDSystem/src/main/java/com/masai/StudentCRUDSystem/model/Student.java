@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Student {
+	
 		@Id
 		@GeneratedValue(strategy = GenerationType.AUTO)
 		private Integer StudentId;
@@ -19,6 +20,14 @@ public class Student {
 			return StudentId;
 		}
 		
+		
+		
+		public void setStudentId(Integer studentId) {
+			StudentId = studentId;
+		}
+
+
+
 		public String getName() {
 			return name;
 		}

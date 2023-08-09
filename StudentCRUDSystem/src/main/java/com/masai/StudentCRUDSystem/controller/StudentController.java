@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @RequestMapping("/stud")
+@CrossOrigin(maxAge = 32000)
 public class StudentController {
 	
 	@Autowired
@@ -29,11 +31,7 @@ public class StudentController {
 	public Student addStudent(@RequestBody Student student) {
 		return studentService.addStudent(student);
 	}
-	
-	@PutMapping("/updateStudent/{id}")
-	public Object updateStudent(@PathVariable Integer id, @RequestBody Student student){
-		return studentService.updateStudentById(id, student);
-	}
+
 	
 	@GetMapping("/viewAllStudent")
 	public List<Student> viewStudentList() {
@@ -45,8 +43,13 @@ public class StudentController {
 		return studentService.searchStudentByStudentId(id);
 	}
 	
+	@PutMapping("/updateStudent/{id}")
+	public Object updateStudent(@PathVariable Integer id,@RequestBody Student student){
+		return studentService.updateStudentById(id, student);
+	}
+	
 	@Transactional
-	@DeleteMapping("/deleteById/{id}")
+	@GetMapping("/deleteById/{id}")
 	public void deleteStudentById(@PathVariable Integer id) {
 		 studentService.deleteStudent(id);
 	}

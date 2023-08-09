@@ -35,7 +35,7 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public Object updateStudentById(Integer id, Student student) {
+	public Object updateStudentById(Integer id,Student student) {
 		// TODO Auto-generated method stub
 		Optional<Student> stud= studentRepo.findById(id);
 		
@@ -48,7 +48,7 @@ public class StudentServiceImpl implements StudentService{
 			Student stt= studentRepo.save(stu1);
 			return stt;
 		}else {
-			return null;
+			return "Student did't found with this id";
 		}
 	}
 

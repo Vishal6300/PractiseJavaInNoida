@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration form</title>
+    <style>
+      #heading {
+        text-align: center;
+        text-decoration: underline;
+        /* font-size: larger; */
+      }
+      * {
+        background-color: aqua;
+      }
+      input {
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="heading">Student Registration Page</h1>
+      <!-- Student add form -->
+      <form>
+        <div>
+          <h2>Add new Student</h2>
+          <input type="text" placeholder="Enter Student Name" />
+          <input type="number" placeholder="Enter student Roll No." />
+          <input type="text" placeholder="Enter student College Name" /><br />
+          <a href="addForm.html">Click here</a>
+          <a href="listOfStudents.html">Student List</a>
+        </div>
+      </form>
+      <!-- Update form -->
+      <form>
+        <div>
+          <h2>Update Student Record</h2>
+          <input type="number" placeholder="Enter correct Student id " />
+          <input type="text" placeholder="Enter Student Name" />
+          <input type="number" placeholder="Enter student Roll No." />
+          <input type="text" placeholder="Enter student College Name" /><br />
+          <button>Submit</button>
+        </div>
+      </form>
+      <!-- view All student list -->
+      <form>
+        <div>
+          <h2>View all Student Record</h2>
+          <button>Submit</button>
+        </div>
+      </form>
+      <!-- Search Student by StudentId -->
+      <form>
+        <h2>Search student by Student id</h2>
+        <div>
+          <input type="number" placeholder="Enter student id for search" />
+          <br />
+          <button>Submit</button>
+        </div>
+      </form>
+      <!-- Delete Student by Student Id -->
+      <form>
+        <h2>Delete Student Record</h2>
+        <div>
+          <input type="number" placeholder="Enter student id for delete" />
+          <br />
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
